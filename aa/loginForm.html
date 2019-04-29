@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+		<title>What3Words</title>
+    <link rel="stylesheet" href="../stylesheets/style0.css" />
+        
+		<link rel="stylesheet" href="/stylesheets/bootstrap/bootstrap.min.css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<style>
+            body {
+                background-image: url('images/11.jpg'); 
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        </style>
+	</head>
+
+	<body class="background_logo">
+		
+		<div class="container">
+        <div class="card card-container"  style="opacity: 0.9;">
+            <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" style="opacity: 1.0;"/>
+            <p id="profile-name" class="profile-name-card"></p>
+            <form class="form-signin" action="/login" method='post' style="opacity: 1.0;">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="email" style="opacity: 1.0;" name="email" class="form-control" placeholder="이메일" required autofocus>
+                <input type="password" style="opacity: 1.0;" name="password" class="form-control" placeholder="비밀번호" required>
+                <div id="remember" class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> 이메일 저장
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" style="opacity: 1.0;">로 그 인</button>
+            </form><!-- /form -->
+            <form action="/join/info_write" method='post'>
+                <!--<input type="hidden" name="complete_info" value="false">-->
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" style="opacity: 1.0;">회 원 가 입</button>                
+            </form>
+
+        </div><!-- /card-container -->
+    </div><!-- /container -->
+	</body>
+</html>
